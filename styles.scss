@@ -10,11 +10,13 @@
 
 $bigfont: Simonetta;
 
-$yellow: #FFF662;
-$grey: #f3f3f3;
-$pink: #fe60bd; 
-$blue: #0400fa;
-$green: #64FF92;
+$yellow: #FEF894;
+$lightGrey: #F9FCFE;
+$pink: #FFE1E1;
+$blue: #1B3B66;
+$green: #CFFFDD;
+$purple: #F5DFFF;
+$azure: #C9EBFE;
 
 header{
     margin:0;
@@ -35,9 +37,9 @@ h1{
 
 h2{
     color: $blue;
-    font-family:$bigfont;   
-    font-size:12vw;  
-  
+    font-family:$bigfont;
+    font-size:12vw;
+
 }
 
 h3{
@@ -70,7 +72,7 @@ img{
         li{
             float: left;
             width: 25vw;
-            a{  
+            a{
                 display:block;
                 font-family:LD;
                 color:$blue;
@@ -80,7 +82,7 @@ img{
              }
          }
     }
-}    
+}
 
 .top{
      height: 90vh;
@@ -122,7 +124,7 @@ img{
 .gtitle{
     color:grey;
     overflow-y:auto;
-    
+
 }
 
 .work{
@@ -135,8 +137,8 @@ img{
     column-gap:5vw;
 
 }
-.team{ 
-    display:flex;    
+.team{
+    display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
@@ -146,7 +148,7 @@ img{
 .teammember{
     margin:1vw;
     flex-basis:75%;
- 
+
 }
 
 .ypatia{
@@ -216,4 +218,3 @@ img{
     }
 }
 }
-
