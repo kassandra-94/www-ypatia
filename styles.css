@@ -12,10 +12,14 @@
   box-sizing: border-box;
 }
 
-
+.mainPage{
+  display: flex;
+}
 body {
   background: #F9FCFE;
 }
+
+/*
 
 h1 {
   font-family: Simonetta;
@@ -43,9 +47,12 @@ p {
   font-size: 4vw;
 }
 
+*/
+
+
 .menu {
-  z-index: 1;
-  position: fixed;
+z-index: 2;
+position: fixed;
 width: 1022px;
 height: 80px;
 left: 208px;
@@ -57,6 +64,9 @@ border-radius: 6px;
 }
 .menu ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 /*  width: 100vw;
   list-style-type: none;
   margin: 0;
@@ -65,16 +75,21 @@ border-radius: 6px;
   background-color: #64FF92;*/
 }
 .menu ul li {
-  float: left;
-  width: 25vw;
+  display:flex;
+  flex:1;
+  height: 17px;
+  width: 14px;
 }
 .menu ul li a {
-  display: block;
   font-family: LD;
-  color: #0400fa;
+  color: #333333;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+}
+.mainItem {
+  margin-right: 475px;
+  margin-left: 73px;
+  align-self: center;
 }
 
 /*.top {
@@ -134,6 +149,9 @@ align-items: center;
 color: #333333;
 }
 .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
 width: 150px;
 height: 50px;
@@ -187,6 +205,113 @@ color: #FFFFFF;
 .info a {
   text-decoration: underline;
 }
+.gif{
+  position: absolute;
+width: 394px;
+height: 394px;
+left: 835px;
+top: 217px;
+border-radius: 50%;
+}
+
+
+
+
+
+.whyYpatia {
+}
+
+.title {
+  color: #333333;
+  font-family: Merriweather;
+font-style: normal;
+font-weight: 900;
+font-size: 34px;
+line-height: 43px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+}
+
+ #ypatia{
+  position: absolute;
+width: 627px;
+height: 63px;
+left: 407px;
+top: 766px;
+
+font-family: Merriweather;
+font-style: normal;
+font-weight: 900;
+font-size: 34px;
+line-height: 43px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #333333;
+
+}
+
+.subtitle{
+  position: absolute;
+width: 553px;
+height: 50px;
+left: 205px;
+top: 954px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+display: flex;
+align-items: center;
+
+color: #000000
+}
+
+.whyp{
+  position: absolute;
+width: 553px;
+height: 178px;
+left: 206px;
+top: 989px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+z-index:1;
+color: #000000;
+}
+
+.picture{
+  position: absolute;
+width: 768px;
+height: 363px;
+left: 693px;
+top: 879px;
+background: #C4C4C4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .content {
@@ -229,15 +354,7 @@ color: #FFFFFF;
 .ypatia {
   text-align: center;
 }
-.ypatia video {
-  border-radius: 50%;
-  width: 80%;
-}
 
-@media screen and (min-width: 750px) {
-  .work {
-    column-count: 2;
-  }
 
   .teammember {
     flex-basis: 45%;
