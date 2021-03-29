@@ -10,45 +10,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .mainPage{
   display: flex;
+  flex-direction: column;
+position: relative;
+width: 1440px;
+height: 3067px;
+background: #F9FCFE;
 }
-body {
-  background: #F9FCFE;
-}
-
-/*
-
-h1 {
-  font-family: Simonetta;
-  font-size: 9vw;
-  color: #0400fa;
-  position: absolute;
-  z-index: 2;
-}
-
-h2 {
-  color: #0400fa;
-  font-family: Simonetta;
-  font-size: 12vw;
-}
-
-h3 {
-  color: #0400fa;
-  font-family: Simonetta;
-  font-size: 8vw;
-}
-
-p {
-  color: #0400fa;
-  font-family: LD;
-  font-size: 4vw;
-}
-
-*/
-
 
 .menu {
 z-index: 2;
@@ -57,11 +29,11 @@ width: 1022px;
 height: 80px;
 left: 208px;
 top: 62px;
-
 background: #FFFFFF;
 box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
 border-radius: 6px;
 }
+
 .menu ul {
   list-style-type: none;
   display: flex;
@@ -100,16 +72,6 @@ border-radius: 6px;
   border-bottom-right-radius: 70%;
 }*/
 
-.bottom {
-  height: 110vh;
-  width: 100vw;
-  background-color: #FFF662;
-  border-top-left-radius: 80% 30%;
-  border-top-right-radius: 50% 30%;
-}
-.bottom h2 {
-  margin-top: 10vw;
-}
 
 .toptext h1 {
 /*  padding-left: 10vw;
@@ -219,8 +181,10 @@ border-radius: 50%;
 
 
 .whyYpatia {
-}
+display: flex;
 
+}
+}
 .title {
   color: #333333;
   font-family: Merriweather;
@@ -231,7 +195,6 @@ line-height: 43px;
 display: flex;
 align-items: center;
 text-align: center;
-text-transform: capitalize;
 }
 
  #ypatia{
@@ -249,9 +212,7 @@ line-height: 43px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #333333;
-
 }
 
 .subtitle{
@@ -300,6 +261,77 @@ top: 879px;
 background: #C4C4C4;
 }
 
+.howWeWork{
+  display: flex;
+  flex-direction: column;
+}
+#how {
+  position: absolute;
+width: 627px;
+height: 63px;
+left: 407px;
+top: 1451px;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 723px;
+
+left: 359px;
+top: 1538px;
+}
+ pre{
+   text-align: center;
+   margin-bottom: 40px;
+ }
+
+.imgOfGroup{
+width: 768px;
+height: 363px;
+background: #C4C4C4;
+border-radius: 4px;
+margin-bottom: 40px;
+}
+p{
+  font-family: Merriweather;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+margin-bottom: 20px;
+}
+.values ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 984px;
+  height: 217px;
+}
+
+.values li{
+  font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+
+display: inline-flex ;
+align-items: center;
+text-align: center;
+text-transform: lowercase;
+
+color: #1B3B66;
+
+  margin: 10px 5px;
+  background: #C9EBFE;
+  box-shadow: -4px 4px 0px #9AB2D7;
+  border-radius: 40px;
+  list-style-type: none;
+}
 
 
 
@@ -307,13 +339,7 @@ background: #C4C4C4;
 
 
 
-
-
-
-
-
-
-
+/*
 .content {
   margin: auto;
   width: 80vw;
@@ -374,7 +400,7 @@ background: #C4C4C4;
 
   p {
     font-size: 2vw;
-  }*/
+  }
 
   .ypatia video {
     width: 60%;
@@ -388,7 +414,7 @@ background: #C4C4C4;
   .teammember {
     flex-basis: 25%;
   }
-/*
+
   h1 {
     font-size: 5vw;
   }
@@ -404,7 +430,7 @@ background: #C4C4C4;
   p {
     font-size: 1vw;
   }
-*/
+
   .ypatia video {
     width: 30%;
   }
