@@ -6,25 +6,26 @@
   font-family: "LD";
   src: url("./fonts/Lexend_Deca/LexendDeca-Regular.ttf");
 }
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .mainPage{
   display: flex;
   flex-direction: column;
 position: relative;
-width: 1440px;
+width: 100%;
 height: 3067px;
 background: #F9FCFE;
+overflow: visible;
 }
 
 .menu {
 z-index: 2;
-position: fixed;
+position: absolute;
 width: 1022px;
 height: 80px;
 left: 208px;
@@ -184,7 +185,7 @@ border-radius: 50%;
 display: flex;
 
 }
-}
+
 .title {
   color: #333333;
   font-family: Merriweather;
@@ -207,7 +208,7 @@ top: 766px;
 font-family: Merriweather;
 font-style: normal;
 font-weight: 900;
-font-size: 34px;
+font-size:34px;
 line-height: 43px;
 display: flex;
 align-items: center;
@@ -261,25 +262,31 @@ top: 879px;
 background: #C4C4C4;
 }
 
+
+
+
 .howWeWork{
-  display: flex;
-  flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
 #how {
-  position: absolute;
+position: absolute;
 width: 627px;
 height: 63px;
-left: 407px;
 top: 1451px;
+left: 407px;
+font-size: 34px;
 }
 
 .work-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: absolute;
   width: 723px;
-
 left: 359px;
 top: 1538px;
 }
@@ -309,6 +316,8 @@ margin-bottom: 20px;
 .values ul{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   width: 984px;
   height: 217px;
 }
@@ -322,7 +331,6 @@ font-size: 14px;
 display: inline-flex ;
 align-items: center;
 text-align: center;
-text-transform: lowercase;
 
 color: #1B3B66;
 
@@ -331,11 +339,95 @@ color: #1B3B66;
   box-shadow: -4px 4px 0px #9AB2D7;
   border-radius: 40px;
   list-style-type: none;
+  padding: 5px 24px;
+
+}
+.values li a{
+  text-decoration: none;
 }
 
+footer{
+position: relative;
+width: 1396px;
+height: 666px;
+left: 21px;
+top: 2391px;
+display: flex;
 
 
+}
+#team{
+  position: absolute;
+  width: 627px;
+  height: 37px;
+  left: 394px;
+  top: 2431px;
 
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #333333;
+}
+
+.teamContent{
+  position: absolute;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1026px;
+  height: 481px;
+  left: 253px;
+  top: 2477px;
+
+}
+.teammember{
+  width: 317px;
+  height: 217px;
+margin: 20px 45px;
+}
+.teammember> h3{
+  position: absolute;
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+align-items:flex-start;
+text-transform: capitalize;
+color: #000000;
+
+}
+
+.teammember >p {
+  position: absolute;
+justify-content: flex-end;
+font-family: Rubik;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23.7px;
+display: flex;
+
+
+color: #000000;
+}
+
+#more {display: none;}
+@media only screen and (max-width:400px) {
+  /* % in width*/
+}
+@media only screen and (min-width:401px ) and (max-width:960px){
+
+}
+@media only screen and (min-width:961px){
+  /* fixed width */
+}
 
 
 
@@ -435,5 +527,6 @@ color: #1B3B66;
     width: 30%;
   }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
