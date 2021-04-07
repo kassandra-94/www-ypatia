@@ -3,9 +3,11 @@
 <head>
 <title>Ypatia</title>
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="button.js">
 <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+<style>
+#more {display: none;}
+</style>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
 
 
 
- <section class="whyYpatia">
+ <div class="whyYpatia">
       <h2 class= "title" id="ypatia"> why 'ypatia'?  </h2>
 
       <h3 class=" subtitle">Ypatia is our ispiration.</h3>
@@ -54,7 +56,7 @@
          We want to celebrat e her.
          We want women helping each other to achieve their own fulfilment.</p>
          <img class="picture" src=""  alt="image representing ypatia">
-</section>
+</div>
 
 
 <section>
@@ -114,21 +116,32 @@
 		<div class="teamContent">
 			<div class="teammember one">
 				<h3>Aspasia</h3>
-				<p> software developer, tech lead and project manager <span id="dots">...</span><span id="more">with experience of more than 10 years in the tech indutry.
+				<p> software developer, tech lead and project manager
+          <span id="dots"> Some of my code <a href="https://github.com/aspasia" target="_blank">here </a></span>
+      <div class="levelUp"><span id="more">with experience of more than 10 years in the tech indutry.
            Since some years now working towards bringing more diversity and balance to the IT industry.
             Passionate about creating open source software, especially when it enables people to feel heard,
-            to participate in the commons and to self organise. Some of my code is at https://github.com/aspasia </span> </p>
+            to participate in the commons and to self organise. Some of my code is at <a href="https://github.com/aspasia" target="_blank"> https://github.com/aspasia</a> </span> </p>
             <button onclick="myFunction()" id="myBtn">Read more</button>
+            <script src="button.js"></script>
+          </div>
 			</div>
 
 			<div class="teammember two">
 				<h3>Beatrice</h3>
-				<p> Biologist, ecologist and hydrologist<span id="dots">...</span><span id="more"> with experience in environmental projects that build-up knowledge for
+				<p> Biologist, ecologist and hydrologist<span id="dots">
+          Listen to <a href=" https://radioambulante.org/" target="_blank">podcast </a></br>
+          watch <a href="https://www.nikonsmallworld.com/" target="_blank">project</a></br>
+          join<a href="https://www.abccolombia.org/" target="_blank"> association</a></span>
+      <div class="levelUp"> <span id="more"> with experience in environmental projects that build-up knowledge for
            improved natural resource management by multiple stakeholders. Obsessed with closing the gap between science
             and people by connecting scientific knowledge with people's preexisting knowledge and their needs.
 			  https://radioambulante.org/
 			  https://www.nikonsmallworld.com/
 			  https://www.abccolombia.org/	</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <script src="button.js"></script>
+      </div>
 			</div>
 
 			<div class="teammember three">
