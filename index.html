@@ -5,11 +5,10 @@
 <link rel="stylesheet" href="styles.css">
 <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-<style>
-#more {display: none;}
-</style>
+  <script src="button.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Rubik:wght@500;700&display=swap"/>
 </head>
-
 <body>
   <div class="mainPage">
 
@@ -116,46 +115,52 @@
 		<div class="teamContent">
 			<div class="teammember one">
 				<h3>Aspasia</h3>
-				<p> software developer, tech lead and project manager
-          <span id="dots"> Some of my code <a href="https://github.com/aspasia" target="_blank">here </a></span>
-      <div class="levelUp"><span id="more">with experience of more than 10 years in the tech indutry.
+				<p class="card-text"> software developer, tech lead and project manager
+          <span class="dots"> Some of my code <a href="https://github.com/aspasia" target="_blank">here </a></span>
+      <span class="more">with experience of more than 10 years in the tech indutry.
            Since some years now working towards bringing more diversity and balance to the IT industry.
             Passionate about creating open source software, especially when it enables people to feel heard,
-            to participate in the commons and to self organise. Some of my code is at <a href="https://github.com/aspasia" target="_blank"> https://github.com/aspasia</a> </span> </p>
-            <button onclick="myFunction()" id="myBtn">Read more</button>
-            <script src="button.js"></script>
-          </div>
+            to participate in the commons and to self organise. Some of my code is
+            at <a href="https://github.com/aspasia" target="_blank"> https://github.com/aspasia</a> </span> </p>
+            <button onclick="$(card-text)myFunction(e)">Read more</button>
+
 			</div>
 
 			<div class="teammember two">
 				<h3>Beatrice</h3>
-				<p> Biologist, ecologist and hydrologist<span id="dots">
+				<p> Biologist, ecologist and hydrologist<span class="dots">
           Listen to <a href=" https://radioambulante.org/" target="_blank">podcast </a></br>
           watch <a href="https://www.nikonsmallworld.com/" target="_blank">project</a></br>
           join<a href="https://www.abccolombia.org/" target="_blank"> association</a></span>
-      <div class="levelUp"> <span id="more"> with experience in environmental projects that build-up knowledge for
+       <span class="more"> with experience in environmental projects that build-up knowledge for
            improved natural resource management by multiple stakeholders. Obsessed with closing the gap between science
             and people by connecting scientific knowledge with people's preexisting knowledge and their needs.
 			  https://radioambulante.org/
 			  https://www.nikonsmallworld.com/
 			  https://www.abccolombia.org/	</span></p>
-        <button onclick="myFunction()" id="myBtn">Read more</button>
-        <script src="button.js"></script>
+        <button class="read">Read more</button>
       </div>
-			</div>
+
 
 			<div class="teammember three">
 				<h3>Elena</h3>
 				<p> Educated lawyer with experience in European law especially licenses (FOSS), GDPR and all private company
-           law issues.<span id="dots">...</span><span id="more"> Interested in raising awareness surrounding Human Rights, Free and Open-Source software and
+           law issues.<span class="dots"></span>
+           <span class="more"> Interested in raising awareness surrounding Human Rights, Free and Open-Source software and
             Intellectual property. Passionate Project manager (LEDGER. eu) and avid promoter of Open Knowledge. </span></p>
+            <button onclick="myFunction()" class="myBtn">Read more</button>
+
+
 			</div>
 
 			<div class="teammember four">
 				<h3>Kelly</h3>
-				<p> Mathematician, specialized in probabilities and stochastic analysis.<span id="dots">...</span><span id="more"> Currently working as a PhD student
+				<p class="card-text"> Mathematician, specialized in probabilities and stochastic analysis.<span class="dots"></span>
+          <span class="more"> Currently working as a PhD student
            in National Technical University of Athens. Also working as a math teacher trying to inspire kids and all
             kinds of students to do maths and search for proofs. Love to solve all kinds of puzzles. </span></p>
+            <button onclick="myFunction(e)" >Read more</button>
+
 			</div>
 
 			<div class="teammember five">
