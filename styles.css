@@ -47,46 +47,43 @@
 }
 
 .mainPage{
-  display: flex;
-  flex-direction: column;
+  width:  100%;
+  height: 100%;
 position: relative;
-width: 100%;
-background: #F9FCFE;
-overflow: visible;
+background-color: aqua;
+  /*#F9FCFE;*/
+  overflow-x: hidden;
 }
 
 .menu {
-z-index: 2;
+z-index: 1;
 position: absolute;
-width: 1022px;
-height: 80px;
-left: 208px;
-top: 62px;
+  width: 79.84vw;
+  height: 13.84vh;
+left: 16.25vw;
+top: 10.72vh;
 background: #FFFFFF;
 box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
 border-radius: 6px;
+display: flex;
+align-items: center;
+
 }
 
 .menu ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-/*  width: 100vw;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #64FF92;*/
+  flex:3;
 }
 .menu ul li {
   display:flex;
   flex:1;
-  height: 17px;
-  width: 14px;
+  height: 2.94vh;
+  width: 1.093vw;
   font-style: normal;
 font-weight: bold;
-font-size: 16px;
+font-size: 1.25vw;
 }
 .menu ul li a {
   font-family: LD;
@@ -95,8 +92,8 @@ font-size: 16px;
   text-decoration: none;
 }
 .mainItem {
-  margin-right: 475px;
-  margin-left: 73px;
+  margin-right: 37.10vw;
+  margin-left: 5.50vw;
   align-self: center;
 }
 
@@ -108,22 +105,21 @@ font-size: 16px;
   border-bottom-right-radius: 70%;
 }*/
 
-
+.whyYpatia  {
+  height:  114.70vh;
+}
 .toptext h1 {
-/*  padding-left: 10vw;
-  padding-right: 5vw;
-  padding-top: 20vh;*/
 position: absolute;
-width: 627px;
-height: 63px;
-left: 208px;
-top: 281px;
+width: 48.98vw;
+height: 10.89vh;
+left: 16.25vw;
+top: 48.61vh;
 
-font-family: Merriweather;
+font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
-font-size: 40px;
-line-height: 50px;
+font-size: 3.125vw;
+line-height: 8.65vh;
 display: flex;
 align-items: center;
 color: #333333;
@@ -131,15 +127,15 @@ color: #333333;
 
 .subtext h2{
 position: absolute;
-width: 535px;
-height: 144px;
-left: 208px;
-top: 341px;
+width: 41.79vw;
+height: 24.91vh;
+left: 16.25vw;
+top: 58.99vh;
 
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: normal;
-font-size: 32px;
+font-size:  2.5vw;
 line-height: 150.7%;
 
 display: flex;
@@ -151,10 +147,10 @@ color: #333333;
   align-items: center;
   justify-content: center;
   position: absolute;
-width: 150px;
-height: 50px;
-left: 207px;
-top: 494px;
+width:  11.71vw;
+height: 8.65vh;
+left: 16.17vw;
+top: 85.467vh;
 
 background: #FD80C8;
 box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
@@ -166,7 +162,7 @@ position: absolute;
 width: 99px;
 height: 17px;
 
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
@@ -189,7 +185,7 @@ color: #FFFFFF;
   left: 380px;
   top: 511px;
 
-  font-family: Rubik;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -214,16 +210,9 @@ border-radius: 50%;
 
 
 
-
-
-.whyYpatia {
-display: flex;
-
-}
-
 .title {
   color: #333333;
-  font-family: Merriweather;
+  font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
 font-size: 34px;
@@ -240,7 +229,7 @@ height: 63px;
 left: 407px;
 top: 766px;
 
-font-family: Merriweather;
+font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
 font-size:34px;
@@ -258,7 +247,7 @@ height: 50px;
 left: 205px;
 top: 954px;
 
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
@@ -276,7 +265,7 @@ height: 178px;
 left: 206px;
 top: 989px;
 
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
@@ -300,11 +289,6 @@ background: #C4C4C4;
 
 
 
-.howWeWork{
-display: flex;
-justify-content: center;
-align-items: center;
-}
 
 #how {
 position: absolute;
@@ -338,7 +322,7 @@ border-radius: 4px;
 margin-bottom: 40px;
 }
 p{
-  font-family: Merriweather;
+  font-family:" Merriweather";
 font-style: normal;
 font-weight: 900;
 font-size: 18px;
@@ -358,7 +342,7 @@ margin-bottom: 20px;
 }
 
 .values li{
-  font-family: Rubik;
+  font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
@@ -381,12 +365,12 @@ color: #1B3B66;
   text-decoration: none;
 }
 
+/*
 footer{
-position: relative;
-display: flex;
-
-
+  position: relative;
+  display: flex;
 }
+*/
 #team{
   position: absolute;
   width: 627px;
@@ -394,7 +378,7 @@ display: flex;
   left: 394px;
   top: 2431px;
 
-  font-family: Merriweather;
+  font-family: "Merriweather";
   font-style: normal;
   font-weight: 900;
   font-size: 34px;
@@ -426,7 +410,7 @@ flex-direction: column;
 
 }
 .teammember> h3{
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: 500;
 font-size: 34px;
@@ -440,7 +424,7 @@ color: #000000;
 .teammember >p {
 display: flex;
 flex-direction: column;
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -467,11 +451,29 @@ button{
 @media only screen and (max-width:400px) {
   /* % in width*/
 }
-@media only screen and (min-width:401px ) and (max-width:960px){
 
-}
 @media only screen and (min-width:961px){
   /* fixed width */
+  .mainPage{
+    width:  112.5vw;
+    height: 530vh;
+    overflow-x: hidden;
+  }
+  .menu {
+  z-index: 1;
+  position: absolute;
+  width: 79.84vw;
+  height: 13.84vh;
+  left: 208px;
+  top: 62px;
+  background: #FFFFFF;
+  box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+
+  }
+
 }
 
 
