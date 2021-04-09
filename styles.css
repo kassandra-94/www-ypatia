@@ -159,14 +159,14 @@ border-radius: 4px;
 
 .button h3 {
 position: absolute;
-width: 99px;
-height: 17px;
+width: 7.734vw;
+height:  2.941vh;
 
 font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
-font-size: 14px;
-line-height: 17px;
+font-size:  1.093vw;
+line-height: 2.941vh;
 
 align-items: center;
 text-align: center;
@@ -180,16 +180,16 @@ color: #FFFFFF;
 
 .info {
   position: absolute;
-  width: 118px;
-  height: 17px;
-  left: 380px;
-  top: 511px;
+  width:  9.21vw;
+  height: 2.9411vh;
+  left: 29.68vw;
+  top: 88.40vh;
 
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.093vw;
+  line-height: 2.941vh;
 
 
   align-items: center;
@@ -201,10 +201,10 @@ color: #FFFFFF;
 }
 .gif{
   position: absolute;
-width: 394px;
-height: 394px;
-left: 835px;
-top: 217px;
+width: 30.78125vw;
+height:30.78125vw  ;
+left: 65.234vw;
+top: 37.543vh;
 border-radius: 50%;
 }
 
@@ -215,8 +215,8 @@ border-radius: 50%;
   font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
-font-size: 34px;
-line-height: 43px;
+font-size:  2.656vw;
+line-height: 7.4394vh;
 display: flex;
 align-items: center;
 text-align: center;
@@ -224,16 +224,16 @@ text-align: center;
 
  #ypatia{
   position: absolute;
-width: 627px;
-height: 63px;
-left: 407px;
-top: 766px;
+width: 48.98vw;
+height: 10.89vh;
+left: 31.796vw;
+top: 132.525vh;
 
 font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
-font-size:34px;
-line-height: 43px;
+font-size:2.656vw;
+line-height: 7.4394vh;
 display: flex;
 align-items: center;
 text-align: center;
@@ -242,16 +242,16 @@ color: #333333;
 
 .subtitle{
   position: absolute;
-width: 553px;
-height: 50px;
-left: 205px;
-top: 954px;
+width: 43.20vw;
+height: 8.650vh;
+left: 16.015vw;
+top:  165.051vh;
 
 font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
-font-size: 30px;
-line-height: 36px;
+font-size: 2.343vw;
+line-height:  6.2283vh;
 display: flex;
 align-items: center;
 
@@ -260,16 +260,16 @@ color: #000000
 
 .whyp{
   position: absolute;
-width: 553px;
-height: 178px;
-left: 206px;
-top: 989px;
+width:43.20vw;
+height:30.795vh;
+left: 16.093vw;
+top: 171.1072vh;
 
 font-family: "Rubik";
 font-style: normal;
 font-weight: normal;
-font-size: 20px;
-line-height: 27px;
+font-size:1.5625vw;
+line-height: 4.671vh;
 display: flex;
 align-items: center;
 text-transform: capitalize;
@@ -279,10 +279,10 @@ color: #000000;
 
 .picture{
   position: absolute;
-width: 768px;
-height: 363px;
-left: 693px;
-top: 879px;
+width: 60vw;
+height: 62.80276vh;
+left: 54.140625vw;
+top: 152.0761vh;
 background: #C4C4C4;
 }
 
@@ -292,11 +292,17 @@ background: #C4C4C4;
 
 #how {
 position: absolute;
-width: 627px;
-height: 63px;
-top: 1451px;
-left: 407px;
-font-size: 34px;
+width: 48.984vw;
+height: 10.899vh;
+top: 251.038vh;
+left: 31.796vw;
+
+font-family: "Merriweather";
+font-style: normal;
+font-weight: 900;
+font-size: 2.65625vw;
+line-height: 7.4394463vh;
+text-align: center;
 }
 
 .work-content {
@@ -305,47 +311,50 @@ font-size: 34px;
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 723px;
-left: 359px;
-top: 1538px;
+  width: 56.484375vw;
+left: 28.046875vw;
+top: 266.08996vh;
 }
  pre{
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 6.92041vh;
+   font-family: 'Rubik';
+   font-size: 1.5625vw;
+   line-height: 4.8442906vh;
  }
 
 .imgOfGroup{
-width: 768px;
-height: 363px;
+width: 60vw;
+height: 62.802768vh;
 background: #C4C4C4;
 border-radius: 4px;
-margin-bottom: 40px;
+margin-bottom: 6.9204vh;
 }
 p{
   font-family:" Merriweather";
 font-style: normal;
 font-weight: 900;
-font-size: 18px;
-line-height: 23px;
+font-size: 1.40625vw;
+line-height: 3.97923vh;
 display: flex;
 align-items: center;
 text-align: center;
-margin-bottom: 20px;
+margin-bottom: 3.46020vh;
 }
 .values ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 984px;
-  height: 217px;
+  width: 76.875vw;
+  height: 37.54325259vh;
 }
 
 .values li{
   font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
-font-size: 14px;
+font-size:  1.09375vw;
 
 display: inline-flex ;
 align-items: center;
@@ -353,12 +362,12 @@ text-align: center;
 
 color: #1B3B66;
 
-  margin: 10px 5px;
+  margin: 1.7301038062283738vh 0.390625vw;
   background: #C9EBFE;
   box-shadow: -4px 4px 0px #9AB2D7;
   border-radius: 40px;
   list-style-type: none;
-  padding: 5px 24px;
+  padding: 0.8650519031141869vh 1.875vw;
 
 }
 .values li a{
@@ -373,16 +382,15 @@ footer{
 */
 #team{
   position: absolute;
-  width: 627px;
-  height: 37px;
-  left: 394px;
-  top: 2431px;
+
+  left: 30.78125vw;
+  top:  420.5882vh;
 
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 900;
-  font-size: 34px;
-  line-height: 43px;
+  font-size: 2.65625vw;
+  line-height: 7.4394463vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -395,16 +403,16 @@ footer{
   display:flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 1026px;
-  height: 481px;
-  left: 253px;
-  top: 2477px;
+  width: 80.15625vw;
+  height:83.21799vh;
+  left:19.7656vw;
+  top: 428.54671vh;
 
 }
 .teammember{
-  width: 317px;
-  height: 217px;
-margin: 20px 45px;
+  width: 24.765625vw;
+  height:  37.543252;
+margin:  3.460207vh 3.5156vw;
 display: flex;
 flex-direction: column;
 
@@ -413,9 +421,9 @@ flex-direction: column;
 font-family: "Rubik";
 font-style: normal;
 font-weight: 500;
-font-size: 34px;
-line-height: 40px;
-height: 40px;
+font-size: 2.65625vw;
+line-height: 6.9204152vh;
+height: 6.9204152vh;
 text-transform: capitalize;
 color: #000000;
 
@@ -427,8 +435,8 @@ flex-direction: column;
 font-family: "Rubik";
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 23.7px;
+font-size: 1.5625vw;
+line-height: 4.1003460vh;
 color: #000000;
 text-align: left;
 }
@@ -447,6 +455,9 @@ button{
   background-color: #F9FCFE;
   color: #26E4F0;
   z-index: 1;
+  font-family: 'Rubik';
+  font-size: 1.5625vw;
+  line-height: 4.6712802vh;
 }
 @media only screen and (max-width:400px) {
   /* % in width*/
