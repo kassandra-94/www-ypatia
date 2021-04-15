@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Rubik';
-  font-style: normal;
+  font-style: light;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family: 'Rubik';
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
@@ -24,7 +24,7 @@
 }
 @font-face {
   font-family: 'Merriweather';
-  font-style: normal;
+  font-style: bold;
   font-weight: 900;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZWMf6.woff2) format('woff2');
@@ -40,45 +40,73 @@
 }
 
 
+:root {
+  --bg-color: #F9FCFE;
+  --gray1: #333333;
+}
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
 svg{
   width:100%;
 }
+
 .mainPage{
   width:  100%;
   height: 100%;
-position: relative;
-background-color: aqua;
-  /*#F9FCFE;*/
-  overflow-x: hidden;
+  max-width: 1024px;
+  margin: 0 auto;
 }
-
 .menu {
-z-index: 1;
-position: absolute;
-  width: 79.84vw;
-  height: 13.84vh;
-left: 16.25vw;
-top: 10.72vh;
-background: #FFFFFF;
-box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
-border-radius: 6px;
-display: flex;
-align-items: center;
-
+  margin-top: 24px;
+  background: #FFFFFF;
+  box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  font-family: "Rubik";
+  padding: 32px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 100px;
 }
 
-.menu ul {
+.menu__logo {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--gray1);
+}
+
+.menu__nav {
+  flex: 1;
+  text-align: right;
+}
+
+.menu__nav a {
+  margin-left: 48px;
+  text-decoration: none;
+  color: var(--gray1);
+}
+
+
+/* .menu ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   flex:3;
 }
+
 .menu ul li {
   display:flex;
   flex:1;
@@ -87,18 +115,14 @@ align-items: center;
   font-style: normal;
 font-weight: bold;
 font-size: 1.25vw;
-}
-.menu ul li a {
-  font-family: LD;
+} */
+
+/* .menu ul li a {
   color: #333333;
   text-align: center;
   text-decoration: none;
-}
-.mainItem {
-  margin-right: 37.10vw;
-  margin-left: 5.50vw;
-  align-self: center;
-}
+} */
+
 
 /*.top {
   height: 90vh;
@@ -108,73 +132,51 @@ font-size: 1.25vw;
   border-bottom-right-radius: 70%;
 }*/
 
-.whyYpatia  {
-  height:  114.70vh;
+/*HERO */
+.presentation{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
 }
-.toptext h1 {
-position: absolute;
-width: 48.98vw;
-height: 10.89vh;
-left: 16.25vw;
-top: 48.61vh;
 
+.text h1 {
 font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
 font-size: 3.125vw;
 line-height: 8.65vh;
-display: flex;
-align-items: center;
 color: #333333;
+margin-bottom: 20px;
 }
 
-.subtext h2{
-position: absolute;
-width: 41.79vw;
-height: 24.91vh;
-left: 16.25vw;
-top: 58.99vh;
-
+.text h2{
 font-family: "Rubik";
 font-style: normal;
 font-weight: normal;
 font-size:  2.5vw;
 line-height: 150.7%;
-
-display: flex;
-align-items: center;
 color: #333333;
+margin-bottom: 30px;
 }
+
 .button{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
 width:  11.71vw;
 height: 8.65vh;
-left: 16.17vw;
-top: 85.467vh;
-
 background: #FD80C8;
 box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.1);
 border-radius: 4px;
 }
 
 .button h3 {
-position: absolute;
-width: 7.734vw;
-height:  2.941vh;
-
 font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
 font-size:  1.093vw;
 line-height: 2.941vh;
-
-align-items: center;
-text-align: center;
 z-index: 1;
-color: #FFFFFF;
 }
 .button a {
   text-decoration: none;
@@ -182,156 +184,109 @@ color: #FFFFFF;
 }
 
 .info {
-  position: absolute;
-  width:  9.21vw;
-  height: 2.9411vh;
-  left: 29.68vw;
-  top: 88.40vh;
-
+  order:-1;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 1.093vw;
   line-height: 2.941vh;
-
-
-  align-items: center;
-  text-align: center;
   color: #333333;
 }
 .info a {
   text-decoration: underline;
 }
 .gif{
-  position: absolute;
 width: 30.78125vw;
 height:30.78125vw  ;
-left: 65.234vw;
-top: 37.543vh;
 border-radius: 50%;
 }
 
 
 
-.title {
-  color: #333333;
-  font-family: "Merriweather";
-font-style: normal;
-font-weight: 900;
-font-size:  2.656vw;
-line-height: 7.4394vh;
-display: flex;
-align-items: center;
-text-align: center;
+/*WHY SECTION*/
+
+.whyYpatia{
+margin-bottom: 100px;
 }
-
- #ypatia{
-  position: absolute;
-width: 48.98vw;
-height: 10.89vh;
-left: 31.796vw;
-top: 132.525vh;
-
+ #ypatia {
+   margin-bottom: 40px;
+ text-align: center;
 font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
 font-size:2.656vw;
 line-height: 7.4394vh;
-display: flex;
-align-items: center;
-text-align: center;
-color: #333333;
+color: var(--gray1);
+text-transform: capitalize;
 }
 
 .subtitle{
-  position: absolute;
-width: 43.20vw;
-height: 8.650vh;
-left: 16.015vw;
-top:  165.051vh;
-
+margin-bottom: 15px;
 font-family: "Rubik";
 font-style: normal;
 font-weight: bold;
 font-size: 2.343vw;
 line-height:  6.2283vh;
-display: flex;
-align-items: center;
-
-color: #000000
+color: #000000;
 }
 
 .whyp{
-  position: absolute;
-width:43.20vw;
-height:30.795vh;
-left: 16.093vw;
-top: 171.1072vh;
 
+width:50%;
 font-family: "Rubik";
 font-style: normal;
 font-weight: normal;
 font-size:1.5625vw;
 line-height: 4.671vh;
-display: flex;
-align-items: center;
 text-transform: capitalize;
-z-index:1;
 color: #000000;
+z-index: 1;
 }
 
 .picture{
-  position: absolute;
-width: 60vw;
-height: 62.80276vh;
-left: 54.140625vw;
-top: 152.0761vh;
-background: #C4C4C4;
+height: 363px;
+  width: 400px;
+  background: #C4C4C4;
 }
 
 
 
 
 
-#how {
-position: absolute;
-width: 48.984vw;
-height: 10.899vh;
-top: 251.038vh;
-left: 31.796vw;
+/*HOW */
 
+.work-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+#how {
 font-family: "Merriweather";
 font-style: normal;
 font-weight: 900;
 font-size: 2.65625vw;
 line-height: 7.4394463vh;
 text-align: center;
+color: var(--gray1);
 }
 
-.work-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 56.484375vw;
-left: 28.046875vw;
-top: 266.08996vh;
-}
- pre{
+.how__we__work{
+   font-weight: normal;
    text-align: center;
-   margin-bottom: 6.92041vh;
    font-family: 'Rubik';
-   font-size: 1.5625vw;
+   font-size: 20px;
    line-height: 4.8442906vh;
+  margin: 30px 20%;
  }
 
 .imgOfGroup{
-width: 60vw;
-height: 62.802768vh;
+width: 768px;
+height: 363px;
 background: #C4C4C4;
 border-radius: 4px;
-margin-bottom: 6.9204vh;
+margin-bottom: 40px;
+
 }
 p{
   font-family:" Merriweather";
@@ -339,10 +294,9 @@ font-style: normal;
 font-weight: 900;
 font-size: 1.40625vw;
 line-height: 3.97923vh;
-display: flex;
-align-items: center;
 text-align: center;
-margin-bottom: 3.46020vh;
+margin-bottom: 40px;
+
 }
 .values ul{
   display: flex;
@@ -351,6 +305,7 @@ margin-bottom: 3.46020vh;
   align-content: center;
   width: 76.875vw;
   height: 37.54325259vh;
+  margin-bottom: 40px;
 }
 
 .values li{
@@ -358,11 +313,6 @@ margin-bottom: 3.46020vh;
 font-style: normal;
 font-weight: bold;
 font-size:  1.09375vw;
-
-display: inline-flex ;
-align-items: center;
-text-align: center;
-
 color: #1B3B66;
 
   margin: 1.7301038062283738vh 0.390625vw;
@@ -383,43 +333,29 @@ footer{
   display: flex;
 }
 */
-#team{
-  position: absolute;
-  width: 48.984375vw;
-  height: 6.401384vh;
-  left: 30.78125vw;
-  top:  420.5882vh;
 
+/*WHO */
+
+#team{
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 900;
   font-size: 2.65625vw;
   line-height: 7.4394463vh;
-  display: flex;
-  align-items: center;
   text-align: center;
-
-  color: #333333;
+  color: var(--gray1);
+  margin-bottom: 40px;
 }
 
 .teamContent{
-  position: absolute;
   display:flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  width: 80.15625vw;
-  height:83.21799vh;
-  left:19.7656vw;
-  top: 428.54671vh;
-
+flex:1;
 }
 .teammember{
-  width: 24.765625vw;
-  height:  37.543252;
-margin:  3.460207vh 3.5156vw;
-display: flex;
-flex-direction: column;
-
+margin:20px auto;
+width: 33.3%;
 }
 .teammember> h3{
 font-family: "Rubik";
@@ -427,31 +363,28 @@ font-style: normal;
 font-weight: 500;
 font-size: 2.65625vw;
 line-height: 6.9204152vh;
-height: 6.9204152vh;
 text-transform: capitalize;
 color: #000000;
-
+text-align: center;
+margin-bottom: 10px;
 }
 
 .teammember >p {
-display: flex;
-flex-direction: column;
+  text-align: center;
 font-family: "Rubik";
 font-style: normal;
 font-weight: 400;
 font-size: 1.5625vw;
-line-height: 4.1003460vh;
+line-height:24px;
 color: #000000;
-text-align: left;
 }
 
-.dots{
-  text-align: left;
-}
 
-.more{
-  display: none;
+summary{
+border: 0;
+display:-webkit-details-marker;
 }
+/*
 
 button{
   border:0px;
@@ -463,12 +396,14 @@ button{
   font-size: 1.5625vw;
   line-height: 4.6712802vh;
 }
+*/
+/*
 @media only screen and (max-width:400px) {
   /* % in width*/
-}
+/* }  */
 
-@media only screen and (min-width:961px){
-  /* fixed width */
+/* @media only screen and (min-width:961px){
+
   .mainPage{
     width:  112.5vw;
     height: 530vh;
@@ -489,106 +424,4 @@ button{
 
   }
 
-}
-
-
-
-/*
-.content {
-  margin: auto;
-  width: 80vw;
-}
-
-.ytitle {
-  color: #FFF662;
-  overflow-y: auto;
-}
-
-.gtitle {
-  color: grey;
-  overflow-y: auto;
-}
-
-.work {
-  margin-left: 10vw;
-  margin-bottom: 10vw;
-  column-count: 1;
-  column-gap: 5vw;
-}
-.work p {
-  display: inline-block;
-}
-
-.team {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.teammember {
-  margin: 1vw;
-  flex-basis: 75%;
-}
-
-.ypatia {
-  text-align: center;
-}
-
-
-  .teammember {
-    flex-basis: 45%;
-  }
-
-/*  h1 {
-    font-size: 8vw;
-  }
-
-  h2 {
-    font-size: 6vw;
-  }
-
-  h3 {
-    font-size: 4vw;
-  }
-
-  p {
-    font-size: 2vw;
-  }
-
-  .ypatia video {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .work {
-    column-count: 2;
-  }
-
-  .teammember {
-    flex-basis: 25%;
-  }
-
-  h1 {
-    font-size: 5vw;
-  }
-
-  h2 {
-    font-size: 3vw;
-  }
-
-  h3 {
-    font-size: 2vw;
-  }
-
-  p {
-    font-size: 1vw;
-  }
-
-  .ypatia video {
-    width: 30%;
-  }
-}
-
-
-/*# sourceMappingURL=styles.css.map */
+} */
