@@ -208,7 +208,9 @@ border-radius: 50%;
 
 .whyYpatia{
 margin-bottom: 100px;
+
 }
+
  #ypatia {
    margin-bottom: 40px;
  text-align: center;
@@ -232,6 +234,7 @@ color: #000000;
 }
 
 .whyp{
+display: inline-block;
 width:50%;
 font-family: "Rubik";
 font-style: normal;
@@ -246,7 +249,7 @@ z-index: 1;
 .picture{
   display: inline-block;
 height: 363px;
-  width: 400px;
+  width: 500px;
   background: #C4C4C4;
 }
 
